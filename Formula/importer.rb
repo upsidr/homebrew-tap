@@ -5,20 +5,20 @@
 class Importer < Formula
   desc "Import lines from anywhere"
   homepage "https://github.com/upsidr/importer"
-  version "0.0.1-rc.6"
+  version "0.0.1-rc.7"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/upsidr/importer/releases/download/v0.0.1-rc.6/importer_0.0.1-rc.6_darwin_amd64.tar.gz"
-      sha256 "f69903f9c05454bbc21c696bad5ed77c963a3497e734d13fffb366de994c898f"
+      url "https://github.com/upsidr/importer/releases/download/v0.0.1-rc.7/importer_0.0.1-rc.7_darwin_amd64.tar.gz"
+      sha256 "8ea82dbc85ee5f119693e48c7f55afe6c644e4e4413253a49b2446ff6cf3ec34"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/upsidr/importer/releases/download/v0.0.1-rc.6/importer_0.0.1-rc.6_linux_amd64.tar.gz"
-      sha256 "e71d7cdb93e2968b268f70cb3ca044fb147c7bc4135a2e25b8f0e53a5ec6787d"
+      url "https://github.com/upsidr/importer/releases/download/v0.0.1-rc.7/importer_0.0.1-rc.7_linux_amd64.tar.gz"
+      sha256 "fff45a28bcf374e7303ca9824ced22797001b33df6eb8c5e6c15280490e3a406"
     end
   end
 
