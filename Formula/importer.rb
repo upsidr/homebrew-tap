@@ -5,20 +5,20 @@
 class Importer < Formula
   desc "Import any lines, from anywhere"
   homepage "https://github.com/upsidr/importer"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/upsidr/importer/releases/download/v0.1.3/importer_0.1.3_darwin_amd64.tar.gz"
-      sha256 "9ebba90c25c49af9624c4e7fdbe83cbe0ad97971ff3a5e6cafe3e43b1d0b9f88"
+    if Hardware::CPU.arm?
+      url "https://github.com/upsidr/importer/releases/download/v0.1.4/importer_0.1.4_darwin_arm64.tar.gz"
+      sha256 "42aeb607f5ac941377792c719f4c5885b4b442576558fc6e162f834085fde2ab"
 
       def install
         bin.install "importer"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/upsidr/importer/releases/download/v0.1.3/importer_0.1.3_darwin_arm64.tar.gz"
-      sha256 "8242d44190d6f5ae4c20bf182b99112562813f0c57d6ad828871cc03ec92c848"
+    if Hardware::CPU.intel?
+      url "https://github.com/upsidr/importer/releases/download/v0.1.4/importer_0.1.4_darwin_amd64.tar.gz"
+      sha256 "92a11df2ad613328a3a32e6183e4bb1d0356b9c0685a16be2ec53aba23332e1b"
 
       def install
         bin.install "importer"
@@ -28,16 +28,16 @@ class Importer < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/upsidr/importer/releases/download/v0.1.3/importer_0.1.3_linux_amd64.tar.gz"
-      sha256 "42662af6195d0babc91828a5fedb091ba9016ca6f9c12b4d075c611fa9ea68db"
+      url "https://github.com/upsidr/importer/releases/download/v0.1.4/importer_0.1.4_linux_amd64.tar.gz"
+      sha256 "30c426cb826d0478d27993b2dc2729a3886b553b3b950547b88aa053524bf6b9"
 
       def install
         bin.install "importer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/upsidr/importer/releases/download/v0.1.3/importer_0.1.3_linux_arm64.tar.gz"
-      sha256 "3b6a39bdf395f99867d3616f7fb4a21e076fbe2b8ff1a926c867bf1d7ccf1475"
+      url "https://github.com/upsidr/importer/releases/download/v0.1.4/importer_0.1.4_linux_arm64.tar.gz"
+      sha256 "d371fe3afee59e25efe5ce24c30a52088d72da1ffee3a256e83d882c6c57530f"
 
       def install
         bin.install "importer"
